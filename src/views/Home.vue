@@ -350,13 +350,12 @@ export default {
   color: white;
   display: flex;
   justify-content: center;
-  font-size: 0.25rem;
+  font-size: 0.4rem;
   font-weight: 400;
 }
 
 .business-contact--icon {
-  font-size: 1.45rem;
-  margin-right: 1rem;
+  display: none;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -392,6 +391,10 @@ export default {
   .footer--text {
     font-size: 0.9rem;
   }
+  .business-contact--icon {
+    display: flex;
+    font-size: 1.45rem;
+}
   .profile--contact {
   padding-top: 1rem;
   padding-left: 3rem;
