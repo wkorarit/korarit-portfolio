@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "korarit_portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,6 @@
     "axios": "^0.25.0",
     "core-js": "^3.20.0",
     "vue": "^2.6.11",
-    "vue-easytable": "^2.12.2",
     "vue-flatpickr-component": "^8.1.7",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
