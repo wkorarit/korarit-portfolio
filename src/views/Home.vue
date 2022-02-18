@@ -1,14 +1,18 @@
 <template>
   <div class="home">
     <navbar></navbar>
+    <div class="profile--img-small">
+      <img src="../assets/profile.jpg" class="profile--img--small" />
+    </div>
     <div class="profile-intro-section flex justify-center">
-      <div class="">
+      <div class="mr-3">
         <div class="profile--intro-text">It's me, Korarit P.</div>
         <div class="profile--decription-text">
-          Currently a 4-th year Computer Engineering student at <br class="newline"/>King
-          Mongkut's University of Technology Thonburi <br />
+          Currently a 4-th year Computer Engineering student at
+          <br class="newline" />King Mongkut's University of Technology Thonburi
+          <br />
         </div>
-        <div class="profile--contact ">
+        <div class="profile--contact">
           <div class="profile--resume-btn">
             <a href="Korarit_Resume.pdf" download="korarit_resume"
               >Get My Resume</a
@@ -21,7 +25,10 @@
       </div>
       <div>
         <div class="profile--img-section ml-8">
-          <img src="../assets/profile.jpg" class="profile--img hidden md:flex" />
+          <img
+            src="../assets/profile.jpg"
+            class="profile--img hidden md:flex"
+          />
         </div>
       </div>
     </div>
@@ -89,7 +96,7 @@
         <Icon
           icon="heroicons-outline:arrow-circle-right"
           class="arrow-circle-right--icon"
-        />Course
+        />Courses that I have learned
       </div>
       <div class="course--card">
         <course-card
@@ -171,9 +178,24 @@ export default {
   display: none;
 }
 
+.profile--img-small {
+  display: flex;
+  justify-content: center;
+  background-color: #3778c2;
+}
+
+.profile--img--small {
+  margin-top: 6rem;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.4rem;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
 .profile-intro-section {
   background-color: #3778c2;
-  box-shadow: inset 0 0 15px rgba($color: #3e4c59, $alpha: 0.4);
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
@@ -181,16 +203,16 @@ export default {
 .profile--intro-text {
   display: flex;
   color: white;
-  padding-top: 6rem;
-  padding-left: 3rem;
+  justify-content: center;
   font-size: 2rem;
   font-weight: 600;
 }
 
 .profile--decription-text {
   display: flex;
+  justify-content: center;
   color: #f0ffff;
-  padding-left: 3rem;
+  text-align: center;
   line-height: 2.5rem;
   font-size: 0.85rem;
 }
@@ -203,7 +225,7 @@ export default {
   border-width: 2px;
   border-radius: 6px;
   padding: 0.75rem 1.5rem;
-  margin-right: 2rem;
+
   font-weight: 500;
   &:hover {
     cursor: pointer;
@@ -218,7 +240,6 @@ export default {
   border-width: 2px;
   border-radius: 6px;
   padding: 0.75rem 1.5rem;
-  margin-right: 2.5rem;
   font-weight: 500;
   &:hover {
     cursor: pointer;
@@ -229,14 +250,15 @@ export default {
 
 .profile--contact {
   display: flex;
+  width: 100%;
+  justify-content: space-evenly;
   font-size: 0.89rem;
-  padding-left: 3rem;
   color: white;
   margin-top: 1rem;
 }
 
 .profile--img-section {
-  display: flex;
+  display: none;
   justify-content: left;
   margin-top: 70px;
 }
@@ -364,21 +386,33 @@ export default {
 
 // Medium devices (tablets, 768px and up)
 @media screen and (min-width: 768px) {
+  .profile--img-small {
+    display: none;
+  }
+  .profile--img-section {
+    display: flex;
+  }
   .newline {
-  display: block;
-}
+    display: block;
+  }
   .profile--intro-text {
-
-  font-size: 3rem;
-
-}
+    padding-top: 6rem;
+    font-size: 3rem;
+  
+    text-align: left;
+    justify-content: left;
+  }
+  .profile--decription-text {
+    text-align: left;
+    justify-content: left;
+  }
   .logo-configchain--img {
-  height: 120px;
-  width: 476px;
-}
-.senior--decription-text {
-  font-size: 1.125rem;
-}
+    height: 120px;
+    width: 476px;
+  }
+  .senior--decription-text {
+    font-size: 1.125rem;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -394,12 +428,16 @@ export default {
   .business-contact--icon {
     display: flex;
     font-size: 1.45rem;
-}
+  }
   .profile--contact {
-  padding-top: 1rem;
-  padding-left: 3rem;
-  margin-top: 1rem;
-}
+    display: flex;
+    justify-content: left;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  .profile--go-to-to-do-btn {
+    margin-left: 2rem;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -417,21 +455,8 @@ export default {
   .profile-intro-text {
     font-size: 4.75rem;
   }
-  .profile--decription-text{
+  .profile--decription-text {
     font-size: 1.125rem;
-  }
-}
-
-@media screen and (min-width: 1524px) {
-  .senior-project-section,
-  .courses-section {
-    background-color: #f1f4f8;
-    padding: 0.75rem 28rem;
-  }
-  .profile-intro-section {
-    padding: 0 16rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
   }
 }
 </style>

@@ -22,7 +22,7 @@ export default {
   background-color: #fbfbfc;
   border: 1px solid #ecedee;
   border-radius: 6px;
-  padding: 2rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 20px;
