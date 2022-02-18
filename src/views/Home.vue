@@ -289,7 +289,7 @@ export default {
 .courses--topic-text {
   color: #568be4;
   padding-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -336,7 +336,7 @@ export default {
   justify-content: center;
   padding-top: 2rem;
   color: #568be4;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -346,7 +346,7 @@ export default {
   justify-content: center;
   text-align: left;
   color: #3e4c59;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -395,10 +395,20 @@ export default {
   .newline {
     display: block;
   }
+  .senior--topic-text,
+  .courses--topic-text {
+    font-size: 1.5rem;
+  }
+  .skill--topic {
+    font-size: 2rem;
+  }
+  .skill--topic-text {
+    font-size: 1.25rem;
+  }
   .profile--intro-text {
     padding-top: 6rem;
     font-size: 3rem;
-  
+
     text-align: left;
     justify-content: left;
   }
