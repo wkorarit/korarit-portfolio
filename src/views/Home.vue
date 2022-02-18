@@ -5,7 +5,7 @@
       <div class="">
         <div class="profile--intro-text">It's me, Korarit P.</div>
         <div class="profile--decription-text">
-          Currently a 4-th year Computer Engineering student at <br />King
+          Currently a 4-th year Computer Engineering student at <br class="newline"/>King
           Mongkut's University of Technology Thonburi <br />
         </div>
         <div class="profile--contact ">
@@ -136,7 +136,7 @@ export default {
         { icon: "noto-v1:letter-c", text: "C" },
         { icon: "vscode-icons:file-type-python", text: "Python" },
         { icon: "logos:java", text: "Java" },
-        { icon: "vscode-icons:file-type-go", text: "Go Lang" },
+        { icon: "vscode-icons:file-type-go", text: "Go" },
       ],
       tools: [
         { icon: "codicon:github", text: "Git" },
@@ -167,6 +167,10 @@ export default {
   background-color: #f1f4f8;
 }
 
+.newline {
+  display: none;
+}
+
 .profile-intro-section {
   background-color: #3778c2;
   box-shadow: inset 0 0 15px rgba($color: #3e4c59, $alpha: 0.4);
@@ -179,7 +183,7 @@ export default {
   color: white;
   padding-top: 6rem;
   padding-left: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -361,6 +365,14 @@ export default {
 
 // Medium devices (tablets, 768px and up)
 @media screen and (min-width: 768px) {
+  .newline {
+  display: block;
+}
+  .profile--intro-text {
+
+  font-size: 3rem;
+
+}
   .logo-configchain--img {
   height: 120px;
   width: 476px;

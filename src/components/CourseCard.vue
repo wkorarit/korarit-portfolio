@@ -23,7 +23,8 @@ export default {
   border: 1px solid #ecedee;
   border-radius: 6px;
   padding: 2rem 1.5rem;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 20px;
   font-size: 0.85rem;
   &:hover {

@@ -4,8 +4,8 @@
       <div class="sad-icon--container">
         <Icon icon="emojione:sad-but-relieved-face" class="sad--icon" />
       </div>
-      <div class="text-center text-2xl mt-5">Sorry, This Page is only support on desktop screen size.</div>
-      <div class="text-center text-xl">please use others devices which have larger screen.</div>
+      <div class="text-center md:text-2xl text-base mt-5">Sorry, This Page is only support on desktop screen size.</div>
+      <div class="text-center md:text-xl text-sm">please use others devices which have larger screen.</div>
       <div class="sorry-page-back-to-home-btn mt-5" @click="linkToHome">
             Go Back to Home Page
       </div>
@@ -514,8 +514,8 @@ html {
 
 .sorry-page-back-to-home-btn {
   display: flex;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   justify-content: center;
   background-color: #3778c2;
   border-style: solid;
@@ -836,6 +836,10 @@ html {
 
 // Medium devices (tablets, 768px and up)
 @media screen and (min-width: 768px) {
+  .sorry-page-back-to-home-btn {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  }
 }
 
 // Large devices (desktops, 992px and up)

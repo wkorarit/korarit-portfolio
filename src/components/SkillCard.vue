@@ -39,7 +39,8 @@ export default {
   border-color: #cdcdce;
   border-width: 2px;
   border-radius: 6px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   &:hover {
     color: #568be4;
     border-color: #568be4;
