@@ -350,7 +350,7 @@ export default {
   color: white;
   display: flex;
   justify-content: center;
-  font-size: 0.4rem;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 
